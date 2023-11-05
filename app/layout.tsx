@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
+        <header className='border-2 border-black h-[4rem]'>
           Nav
         </header>
-        <main>{children}</main>
-        <footer>by HOteng</footer>
+        <main className='min-h-[calc(100vh-7rem)] border-2 border-blue-500'>{children}</main>
+        <footer className='h-[3rem] border-2 border-red-500'>by HOteng</footer>
       </body>
     </html>
   )

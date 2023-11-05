@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Page = () => {
+const Works = () => {
   return (
-    <div>Works</div>
+    <section className='border-2 border-black'>Works</section>
   )
 }
 
-export default Page
+export default Works
