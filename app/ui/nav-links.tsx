@@ -1,34 +1,56 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 import { User, SampleIcon } from '@/public/icons';
 
-// Map of links to display in the side navigation.
-// Depending on the size of the application, this would be stored in a database.
+// Map of links to display in the header.
 const links = [
-  { name: 'Home', href: '/dashboard', icon: User },
+  { name: 'Home', href: '/', imageSource: '/home.svg' },
   {
     name: 'Works',
     href: '/works',
-    icon: SampleIcon,
+    imageSource: '/home.svg'
   },
-  { name: 'About', href: '/about', icon: SampleIcon },
-  { name: 'Contact', href: '/contact', icon: SampleIcon },
+  { name: 'About', href: '/about', imageSource: '/home.svg' },
+  { name: 'Contact', href: '/contact', imageSource: '/home.svg' },
 ];
 
 const NavLinks = () => {
   return (
-    <div>NavLinks</div>
+    <>
+    {links.map((link) => {
+      const { name, href, imageSource } = link;
+      return (
+        <NavLink
+          key={name}
+          name={name}
+          href={href}
+          imageSource={imageSource}
+        />
+      )
+    })}
+    </>
   )
 }
 
-const NavLink = ({ name, href, Icon }: {
+const NavLink = ({ name, href, imageSource }: {
   name: string;
   href: string;
-  Icon: () => React.JSX.Element;
+  imageSource: string;
 }) => {
   return (
-    <Link href={href}>
-      <Icon />
+    <Link
+      href={href}
+      className="border-2 border-blue-500 flex items-center justify-center gap-1"
+    >
+      <Image
+        src={imageSource}
+        alt="Vercel Logo"
+        // className="dark:invert"
+        width={25}
+        height={25}
+        priority
+      />
       <p>{name}</p>
     </Link>
   )

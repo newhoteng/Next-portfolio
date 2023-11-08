@@ -1,6 +1,7 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import NavLinks from './ui/nav-links';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,9 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className='border-2 border-black h-[4rem]'>
-          Nav
+      <body className={`${inter.className} text-[#313234] bg-[#fff9f3]`}>
+        <header className='border-2 border-black h-[4rem] flex items-center justify-center'>
+          <div className='border-2 border-red-500 flex items-center justify-center gap-8'>
+            <NavLinks />
+          </div>
         </header>
         <main className='min-h-[calc(100vh-7rem)] border-2 border-blue-500'>{children}</main>
         <footer className='h-[3rem] border-2 border-red-500'>by HOteng</footer>
