@@ -1,14 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
-import { User, SampleIcon } from '@/public/icons';
 
 // Map of links to display in the header.
 const links = [
   { name: 'Home', href: '/', imageSource: '/home.svg' },
   {
-    name: 'Works',
-    href: '/works',
+    name: 'Projects',
+    href: '/projects',
     imageSource: '/home.svg'
   },
   { name: 'About', href: '/about', imageSource: '/home.svg' },
@@ -45,15 +44,17 @@ const NavLink = ({ name, href, imageSource }: {
     >
       <Image
         src={imageSource}
-        alt="Vercel Logo"
+        alt=""
         // className="dark:invert"
         width={25}
         height={25}
         priority
       />
-      <p>{name}</p>
+      <p className=' text-secondary'>{name}</p>
     </Link>
   )
 }
+
+// hidden sm:block md:text-lg font-black
 
 export default NavLinks

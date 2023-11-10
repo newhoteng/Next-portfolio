@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Works = () => {
+const Projects = () => {
   return (
     <section className='border-2 border-black'>Works</section>
   )
 }
 
-export default Works
+export default Projects

@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
+import { lusitana, roboto } from '@/app/ui/fonts';
+// import { roboto } from '@/app/ui/fonts';
+
 import './globals.css';
 import NavLinks from './ui/nav-links';
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Harriet Oteng',
@@ -17,13 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} text-[#313234] bg-[#fff9f3]`}>
+      <body className={`${roboto.className} text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
         <header className='border-2 border-black h-[4rem] flex items-center justify-center'>
           <div className='border-2 border-red-500 flex items-center justify-center gap-8'>
             <NavLinks />
           </div>
         </header>
-        <main className='min-h-[calc(100vh-7rem)] border-2 border-blue-500'>{children}</main>
+        <main className='h-[calc(100vh-7rem)] border-2 border-blue-500'>{children}</main>
         <footer className='h-[3rem] border-2 border-red-500'>by HOteng</footer>
       </body>
     </html>
