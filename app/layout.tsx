@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 // import { Inter } from 'next/font/google';
 import { lusitana, roboto } from '@/app/ui/fonts';
-// import { roboto } from '@/app/ui/fonts';
-
 import './globals.css';
 import NavLinks from './ui/nav-links';
+import Footer from './ui/footer';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -21,13 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
-        <header className='border-2 border-black h-[4rem] flex items-center justify-center'>
-          <div className='border-2 border-red-500 flex items-center justify-center gap-8'>
+        <header className='h-[4rem] flex items-center justify-center'>
+          <div className='flex items-center justify-center gap-8'>
             <NavLinks />
           </div>
         </header>
-        <main className='h-[calc(100vh-7rem)] border-2 border-blue-500'>{children}</main>
-        <footer className='h-[3rem] border-2 border-red-500'>by HOteng</footer>
+        <main className='h-[calc(100vh-7rem)] border-2 border-blue-50'>{children}</main>
+        <footer className='h-[3rem] flex items-center justify-between px-4'>
+          <Footer />
+        </footer>
       </body>
     </html>
   )

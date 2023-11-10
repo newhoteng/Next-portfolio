@@ -40,16 +40,16 @@ const NavLink = ({ name, href, imageSource }: {
   return (
     <Link
       href={href}
-      className="border-2 border-blue-500 flex items-center justify-center gap-1"
+      className="flex items-center justify-center gap-1"
     >
-      <Image
+      {/* <Image
         src={imageSource}
         alt=""
         // className="dark:invert"
         width={25}
         height={25}
         priority
-      />
+      /> */}
       <p className=' text-secondary'>{name}</p>
     </Link>
   )
