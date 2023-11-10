@@ -5,9 +5,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import Link from 'next/link';
 
 const socialLinks = [
-  { href: 'https://github.com/newhoteng', icon: <PiGithubLogoFill className="border" /> },
-  { href: 'https://www.linkedin.com/in/harriet-oteng/', icon: <BiLogoLinkedin className="border"/> },
-  { href: 'https://twitter.com/HarrietOteng1', icon: <FaXTwitter className="border"/> },
+  { href: 'https://github.com/newhoteng', icon: <PiGithubLogoFill className="w-6 h-6" /> },
+  { href: 'https://www.linkedin.com/in/harriet-oteng/', icon: <BiLogoLinkedin className="w-6 h-6"/> },
+  { href: 'https://twitter.com/HarrietOteng1', icon: <FaXTwitter className="w-6 h-6"/> },
 ];
 
 const Footer = () => {
@@ -25,7 +25,7 @@ const Footer = () => {
 
 export const Social = ({ href, icon } : { href: string; icon: JSX.Element}) => {
   return (
-    <Link href={href} target="_blank" className='border border-accent rounded w-6 h-6 flex items-center justify-center'>
+    <Link href={href} target="_blank" className='border border-accent rounded w-8 h-8 flex items-center justify-center'>
       {icon}
     </Link>
   )

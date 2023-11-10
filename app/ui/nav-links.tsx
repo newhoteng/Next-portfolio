@@ -50,7 +50,7 @@ const NavLink = ({ name, href, imageSource }: {
         height={25}
         priority
       /> */}
-      <p className=' text-secondary'>{name}</p>
+      <p className='font-bold text-secondary md:text-xl'>{name}</p>
     </Link>
   )
 }

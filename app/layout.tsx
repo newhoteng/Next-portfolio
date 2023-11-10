@@ -20,13 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
-        <header className='h-[4rem] flex items-center justify-center'>
+        <header className='h-[4rem] flex items-center justify-center px-4 md:px-8'>
           <div className='flex items-center justify-center gap-8'>
             <NavLinks />
           </div>
         </header>
-        <main className='h-[calc(100vh-7rem)] border-2 border-blue-50'>{children}</main>
-        <footer className='h-[3rem] flex items-center justify-between px-4'>
+        <main className='h-[calc(100vh-8rem)] border-2 border-blue-500 px-4 md:px-8'>{children}</main>
+        <footer className='h-[4rem] flex items-center justify-between px-4 md:px-8'>
           <Footer />
         </footer>
       </body>
