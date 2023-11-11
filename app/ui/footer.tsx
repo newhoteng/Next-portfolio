@@ -13,7 +13,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <>
-      <div>&copy; Harriet Oteng 2023</div>
+      <div>&copy; 2023</div>
       <div className='flex items-center justify-center gap-2'>
         {socialLinks.map((social) => (
           <Social key={social.href} href={social.href} icon={social.icon} />

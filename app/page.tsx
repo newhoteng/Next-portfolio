@@ -1,5 +1,5 @@
 import { HomePageLink } from './ui/home/links';
-import { InterLinkIcon, ArrowLink } from '@/public/icons';
+import { ArrowLink } from '@/public/icons';
 
 const links = [
   { text: 'view my projects', href: '/projects', icon: <ArrowLink /> },

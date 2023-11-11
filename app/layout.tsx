@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='scroll-smooth'>
       <body className={`${roboto.className} text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
         <header className='h-[4rem] flex items-center justify-center px-4 md:px-8'>
           <div className='flex items-center justify-center gap-8'>
