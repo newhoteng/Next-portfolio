@@ -1,8 +1,9 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 
-const dataSources = ['A', 'B', 'C', 'D'];
+const dataSources = ['/Conference/Home-desktop.png', '/Conference/Home-mobile-callapse.png', '/Conference/Home-desktop.png', '/Conference/Home-desktop.png'];
 
 const Projects = () => {
   const [imgUrl, setImgUrl] = useState(dataSources[0]);
@@ -19,7 +20,15 @@ const Projects = () => {
   return (
     <section className='h-full border-2 border-black'>
       <div className='border-2 h-1/2 flex items-center justify-center'>
-        <div className='max-h-full w-full max-w-[800px] aspect-video rounded-2xl border-2 border-red-500'>{imgUrl}</div>
+        <div className='relative max-h-full w-full max-w-[800px] aspect-video rounded-2xl border-2 border-red-500'>
+          <Image
+            src={imgUrl}
+            fill 
+            objectFit='cover'
+            alt='Picture on the soso project'
+            className='rounded-2xl'
+          />
+        </div>
       </div>
       <div onScroll={handleScroll} className='snap-mandatory snap-y overflow-auto border-2 h-1/2'>
         <div className='snap-always snap-center flex items-center justify-center font-bold text-3xl h-full border-2 border-red-600'>Metrics</div>
