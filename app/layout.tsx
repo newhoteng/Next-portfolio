@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 // import { Inter } from 'next/font/google';
-import { lusitana, roboto } from '@/app/ui/fonts';
+import { roboto } from '@/app/ui/fonts';
 import './globals.css';
 import NavLinks from './ui/nav-links';
 import Footer from './ui/footer';
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth'>
       <body className={`${roboto.className} text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
         <header className='h-[4rem] flex items-center justify-center px-4 md:px-8'>
-          <div className='flex items-center justify-center gap-8'>
+          <div className='flex items-center justify-center gap-4 sm:gap-8'>
             <NavLinks />
           </div>
         </header>
