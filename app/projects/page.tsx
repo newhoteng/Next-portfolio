@@ -9,12 +9,20 @@ const Projects = () => {
   const [imgUrl, setImgUrl] = useState(dataSources[0]);
 
   const handleScroll = (e: any) => {
-    const index = e.target.scrollTop / (e.target.scrollHeight / dataSources.length);
-    const selectedSource = dataSources[index];
-    if (selectedSource === imgUrl) {
-      return;
-    }
-    setImgUrl(selectedSource);
+    setTimeout(() => {
+      const index = e.target.scrollTop / (e.target.scrollHeight / dataSources.length);
+      const selectedSource = dataSources[index];
+      if (selectedSource === imgUrl) {
+        return;
+      }
+      setImgUrl(selectedSource);
+    }, 500)
+    // const index = e.target.scrollTop / (e.target.scrollHeight / dataSources.length);
+    // const selectedSource = dataSources[index];
+    // if (selectedSource === imgUrl) {
+    //   return;
+    // }
+    // setImgUrl(selectedSource);
   }
 
   return (
