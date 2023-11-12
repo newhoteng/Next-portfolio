@@ -8,7 +8,7 @@ export const HomePageLink = ({ href, icon, text } :{ href:string; icon:JSX.Eleme
       <div className='text-accent'>
         {icon}
       </div>
-      <p className='md:text-2xl'>{text}</p>
+      <p className='font-medium md:text-2xl'>{text}</p>
     </Link>
   )
 }

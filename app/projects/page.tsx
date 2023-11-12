@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import Link from 'next/link';
 
 
 import Image from 'next/image';
@@ -25,7 +26,7 @@ const Projects = () => {
   return (
     <section className='h-full'>
       <div className='flex items-center justify-center h-[30%] w-full'>
-        <div className='shadow-lg aspect-video h-4/5'>SVG ani</div>
+        <div className='shadow-lg aspect-video h-4/5'></div>
       </div>
       <div className='relative py-8 h-[70%]'>
         <div className='absolute top-0 w-full flex items-center justify-center'>
@@ -36,10 +37,10 @@ const Projects = () => {
         </div>
         <div className='h-full overflow-y-scroll no-scrollbar'>
           {/* map and display a list of selected projects */}
-          <div className='py-4 px-4 flex items-center justify-between'>
-            <div className='text-2xl font-extrabold'>Metrics</div>
+          <Link href='/' className='py-4 px-4 flex items-center justify-between'>
+            <div className='text-2xl font-semibold'>Metrics</div>
             <div className='italic'>Frontend</div>
-          </div>
+          </Link>
         </div>
       </div>
 

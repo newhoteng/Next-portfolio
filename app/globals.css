@@ -16,10 +16,6 @@
   }
 }
 
-body {
-  /* color: rgb(var(--foreground-rgb)); */
-}
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
