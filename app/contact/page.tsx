@@ -9,7 +9,7 @@ const Contact = () => {
         <input className="placeholder:italic placeholder:font-extralight focus:outline-none p-2" type="text" id="name" name="name" required placeholder="Name" />
         <input className="placeholder:italic placeholder:font-extralight focus:outline-none p-2" type="text" id="mail" name="email" required placeholder="Email address" />
         <textarea className="placeholder:italic placeholder:font-extralight focus:outline-none p-2" id="message" name="message" required placeholder="Message" rows={5} maxLength={500} />
-        <button className="p-2 border-2 border-accent rounded-lg" type="submit">
+        <button className="p-2 border-[1px] border-accent rounded-lg" type="submit">
           Send Message
         </button>
       </form>

@@ -10,9 +10,9 @@ const links = [
     href: '/projects',
     imageSource: '/home.svg'
   },
-  { name: 'About', href: '/about', imageSource: '/home.svg' },
   { name: 'Contact', href: '/contact', imageSource: '/home.svg' },
 ];
+// { name: 'About', href: '/about', imageSource: '/home.svg' },
 
 const NavLinks = () => {
   return (

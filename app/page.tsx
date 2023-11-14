@@ -3,8 +3,8 @@ import { ArrowLink } from '@/public/icons';
 
 const links = [
   { text: 'view my projects', href: '/projects', icon: <ArrowLink /> },
-  { text: 'more about me', href: '/about', icon: <ArrowLink/> },
 ];
+// { text: 'more about me', href: '/about', icon: <ArrowLink/> },
 
 export default function Home() {
   return (
