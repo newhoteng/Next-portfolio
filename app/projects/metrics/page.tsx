@@ -14,7 +14,8 @@ const metrics = {
 
 const Metrics = () => {
   return (
-    <div className='border-2'>
+    <section className='border-2'>
+      <div className='w-full bg-slate-400 aspect-[4/3] rounded-3xl'></div>
       <h2 className='text-2xl font-semibold text-center mb-4'>Metrics</h2>
       <div className='border-2 flex items-center gap-5'>
         <div>BUILT WITH</div>
@@ -29,7 +30,7 @@ const Metrics = () => {
         <p>visit site</p>
         <p>see code</p>
       </div>
-    </div>
+    </section>
   )
 }
 
