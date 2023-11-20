@@ -16,19 +16,24 @@ const Metrics = () => {
   return (
     <section className='border-2'>
       <div className='w-full bg-slate-400 aspect-[4/3] rounded-3xl'></div>
-      <h2 className='text-2xl font-semibold text-center mb-4'>Metrics</h2>
-      <div className='border-2 flex items-center gap-5'>
-        <div>BUILT WITH</div>
-        <div>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
+      <div>
+        <h2 className='text-2xl font-semibold text-center'>Metrics</h2>
+        <div className='border-2 flex gap-5'>
+          <div>BUILT WITH</div>
+          <div className='border-2 border-red-500 flex flex-col'>
+            {metrics.techs.map((tech) => (
+              <span className=''>{tech}</span>
+            ))}
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt repudiandae, et nisi eaque omnis!</p>
+        <div className='flex items-center gap-6'>
+          <p>visit site</p>
+          <p>see code</p>
         </div>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt repudiandae, et nisi eaque omnis!</p>
-      <div className='flex items-center gap-6'>
-        <p>visit site</p>
-        <p>see code</p>
+      <div>
+        Screenshots
       </div>
     </section>
   )
