@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
         <div className='h-full overflow-y-scroll no-scrollbar'>
           {/* map and display a list of selected projects */}
-          <Link href='/' className='py-4 px-4 flex items-center justify-between'>
+          <Link href='/projects/metrics' className='py-4 px-4 flex items-center justify-between'>
             <div className='text-2xl font-semibold'>Metrics</div>
             <div className='italic'>Frontend</div>
           </Link>
