@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Contact = () => {
   return (
-    <section className='flex flex-col items-center justify-center gap-4 h-full'>
+    <section className='flex flex-col items-center justify-center gap-4 h-[calc(100vh-8rem)]'>
       <p className='text-center'>Get in touch below or send me an email directly at <Link href='mailto:harriet.oteng@gmail.com' className='font-semibold'>harriet.oteng@gmail.com</Link></p>
       <form action="https://formsubmit.co/harriet.oteng@gmail.com" method="post" className='w-full max-w-[500px] flex flex-col gap-6'>
         <input className="placeholder:italic placeholder:font-extralight focus:outline-none p-2" type="text" id="name" name="name" required placeholder="Name" />

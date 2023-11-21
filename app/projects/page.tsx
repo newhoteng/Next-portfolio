@@ -24,7 +24,7 @@ const Projects = () => {
   // }
 
   return (
-    <section className='h-full'>
+    <section className='h-[calc(100vh-8rem)]'>
       <div className='flex items-center justify-center h-[30%] w-full'>
         <div className='shadow-lg aspect-video h-4/5'></div>
       </div>

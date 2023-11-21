@@ -16,9 +16,9 @@ const metrics = {
 
 const Metrics = () => {
   return (
-    <section className='border-2'>
-      <div className='w-full bg-slate-400 aspect-[4/3] rounded-3xl'></div>
-      <div>
+    <section className='border-2 flex flex-col gap-12'>
+      <div className='w-full bg-slate-400 aspect-[4/3] rounded-3xl border-2 border-green-600'></div>
+      <div className='border-2 border-green-600'>
         <h2 className='text-2xl font-semibold'>Metrics</h2>
         <div className='border-2 flex gap-16'>
           <div>BUILT WITH</div>
@@ -38,30 +38,33 @@ const Metrics = () => {
           </Link>
         </div>
       </div>
-      <div className='border-2 border-red-500 flex items-cente justify-around'>
-        <div className='relative w-1/3'>
-          <Image
-            src={metrics.screenshots['HOME PAGE']}
-            // fill
-            width={0}
-            height={0}
-            sizes='100vw'
-            className="w-full auto object-contain"
-            alt=""
-            priority
-          />
-        </div>
-        <div className='relative w-1/3'>
-          <Image
-            src={metrics.screenshots['POLLUTANTS PAGE']}
-            // fill
-            width={0}
-            height={0}
-            sizes='100vw'
-            className="w-full auto object-contain"
-            alt=""
-            priority
-          />
+      <div className='border-2 border-green-600'>
+        <h3 className='text-center font-bold'>Mobile Version</h3>
+        <div className='border-2 border-red-500 flex items-cente justify-around'>
+          <div className='relative w-1/3'>
+            <Image
+              src={metrics.screenshots['HOME PAGE']}
+              // fill
+              width={0}
+              height={0}
+              sizes='100vw'
+              className="w-full auto object-contain"
+              alt=""
+              priority
+            />
+          </div>
+          <div className='relative w-1/3'>
+            <Image
+              src={metrics.screenshots['POLLUTANTS PAGE']}
+              // fill
+              width={0}
+              height={0}
+              sizes='100vw'
+              className="w-full auto object-contain"
+              alt=""
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -69,14 +72,3 @@ const Metrics = () => {
 }
 
 export default Metrics
-
-{/* <div className='hidden border-2 h-1/3 items-center justify-center'>
-  <div className='relative max-h-full w-full max-w-[800px] aspect-video rounded-2xl border-2 border-red-500'>
-    <Image
-      src={imgUrl}
-      fill 
-      alt='Picture of the project'
-      className='rounded-2xl shadow-lg object-cover'
-    />
-  </div>
-</div> */}
