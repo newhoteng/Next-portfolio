@@ -38,7 +38,7 @@ const Metrics = () => {
           </Link>
         </div>
       </div>
-      <div className='border-2 border-red-500'>
+      <div className='border-2 border-red-500 flex items-cente justify-around'>
         <div className='relative w-1/3'>
           <Image
             src={metrics.screenshots['HOME PAGE']}
@@ -46,8 +46,21 @@ const Metrics = () => {
             width={0}
             height={0}
             sizes='100vw'
-            className="w-full auto"
+            className="w-full auto object-contain"
             alt=""
+            priority
+          />
+        </div>
+        <div className='relative w-1/3'>
+          <Image
+            src={metrics.screenshots['POLLUTANTS PAGE']}
+            // fill
+            width={0}
+            height={0}
+            sizes='100vw'
+            className="w-full auto object-contain"
+            alt=""
+            priority
           />
         </div>
       </div>
