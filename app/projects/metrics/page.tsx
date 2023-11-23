@@ -6,8 +6,8 @@ const metrics = {
   name: 'metrics',
   description: 'A web app that fetches and displays air quality data for selected cities from a third party RESTful API. A click on a city tile on the homepage directs users to the details page which lists the concentration of the various pollutants. It has a colour indicator feature that shows an air icon in a different colour based on the current air quality index.',
   screenshots: {
-    'HOME PAGE': '/metrics/homepage.png',
-    'POLLUTANTS PAGE': '/metrics/pollutants.png',
+    'HOME PAGE': '/metrics/mobile-home.png',
+    'POLLUTANTS PAGE': '/metrics/mobile-pollutants.png',
   },
   techs: ['React', 'Redux', 'React Testing Library', 'React-Router', 'CSS Modules'],
   live: 'https://metrics-59av.onrender.com/',
