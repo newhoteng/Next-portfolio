@@ -31,7 +31,7 @@ const Metrics = () => {
           <div className='w-1/2 font-medium'>BUILT WITH</div>
           <div className='w-1/2 flex flex-col'>
             {metrics.techs.map((tech) => (
-              <span className=''>{tech}</span>
+              <span key={tech}>{tech}</span>
             ))}
           </div>
         </div>
