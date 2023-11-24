@@ -13,8 +13,8 @@ const Project = ({ title, color, type, href } :
       </div>
       <div className='flex items-center justify-center h-2/5'>
         <Link href={href} className='block'>
-          <h2 className='border-2 text-2xl font-semibold'>{title}</h2>
-          <p className='border-2 italic'>{type}</p>
+          <h2 className='text-2xl font-semibold'>{title}</h2>
+          <p className='italic'>{type}</p>
         </Link>
       </div>
     </div>

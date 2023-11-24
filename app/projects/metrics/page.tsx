@@ -22,8 +22,8 @@ const metrics = {
 const Metrics = () => {
   return (
     <section className='flex flex-col gap-12'>
-      <div className='flex items-center justify-center text-white w-full bg-[#fc5193] aspect-[4/3] rounded-3xl'>
-        <h1 style={lobster.style} className='text-4xl tracking-widest'>METRICS</h1>
+      <div className='flex items-center justify-center text-white w-full bg-[#fc5193] aspect-[4/3] rounded-3xl sm:h-[50vh] sm:aspect-auto sm:rounded-t-none'>
+        <h1 style={lobster.style} className='text-4xl md:text-5xl tracking-widest'>METRICS</h1>
       </div>
       <div className='flex flex-col gap-4'>
         <h2 className='text-2xl font-semibold'>METRICS</h2>
