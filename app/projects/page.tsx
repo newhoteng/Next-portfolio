@@ -19,6 +19,12 @@ const projectData = [
     color: '#545862',
     type: 'Web Development - Frontend',
     href: '/projects/todo',
+  },
+  {
+    title: 'Bookstore',
+    color: '#0290ff',
+    type: 'Web Development - Frontend',
+    href: '/projects/bookstore',
   }
 ]
 

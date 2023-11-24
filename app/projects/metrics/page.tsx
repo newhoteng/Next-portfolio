@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { lobster } from '@/app/ui/fonts';
-import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import TextDetails from '@/app/ui/projects/text-details';
 
 const metrics = {
-  name: 'metrics',
+  name: 'Metrics',
   description: 'A web app that fetches and displays air quality data for selected cities from a third party RESTful API. A click on a city tile on the homepage directs users to the details page which lists the concentration of the various pollutants. It has a colour indicator feature that shows an air icon in a different colour depending on the current air quality index.',
   mobile: {
     'HOME PAGE': '/metrics/mobile-home.png',
@@ -20,38 +20,18 @@ const metrics = {
 }
 
 const Metrics = () => {
+  const {name, description, techs, live, source, desktop } = metrics
   return (
     <section className='flex flex-col gap-12'>
       <div className='flex items-center justify-center text-white w-full bg-[#fc5193] aspect-[4/3] rounded-3xl sm:h-[50vh] sm:aspect-auto sm:rounded-t-none'>
-        <h1 style={lobster.style} className='text-4xl md:text-5xl tracking-widest'>METRICS</h1>
+        <h1 style={lobster.style} className='text-4xl md:text-5xl tracking-widest'>{name}</h1>
       </div>
-      <div className='flex flex-col gap-4'>
-        <h2 className='text-2xl font-semibold'>METRICS</h2>
-        <div className='flex'>
-          <div className='w-1/2 font-medium'>BUILT WITH</div>
-          <div className='w-1/2 flex flex-col'>
-            {metrics.techs.map((tech) => (
-              <span key={tech}>{tech}</span>
-            ))}
-          </div>
-        </div>
-        <p>{metrics.description}</p>
-        <div className='flex items-center justify-between'>
-          <a className='flex items-center gap-2' rel="noopener noreferrer" href={metrics.live} target='_blank'>
-            <HiOutlineArrowUpRight className="text-accent stroke-2"/>
-            <span>visit site</span>
-          </a>
-          <a className='flex items-center gap-2' rel="noopener noreferrer" href={metrics.source} target='_blank'>
-            <HiOutlineArrowUpRight className="text-accent stroke-2"/>
-            <span>see code</span>
-          </a>
-        </div>
-      </div>
+      <TextDetails name={name} description={description} techs={techs} live={live} source={source}/>
       <div>
         <h3 className='text-center font-medium mb-2'>HOMEPAGE</h3>
         <div className='relative'>
           <Image
-            src={metrics.desktop['HOME PAGE']}
+            src={desktop['HOME PAGE']}
             width={0}
             height={0}
             sizes='100vw'

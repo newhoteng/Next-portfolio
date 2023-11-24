@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { lobster } from '@/app/ui/fonts';
-import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import TextDetails from '@/app/ui/projects/text-details';
 
 const conference = {
   name: 'Conference',
@@ -21,33 +21,13 @@ const conference = {
 }
 
 const Conference = () => {
+  const { name, description, techs, live, source } = conference
   return (
     <section className='flex flex-col gap-12'>
       <div style={{backgroundColor: conference.color}} className='flex items-center justify-center text-white w-full aspect-[4/3] rounded-3xl sm:h-[50vh] sm:aspect-auto sm:rounded-t-none'>
         <h1 style={lobster.style} className='text-4xl md:text-5xl tracking-widest'>{conference.name}</h1>
       </div>
-      <div className='flex flex-col gap-4'>
-        <h2 className='text-2xl font-semibold uppercase'>{conference.name}</h2>
-        <div className='flex'>
-          <div className='w-1/2 font-medium'>BUILT WITH</div>
-          <div className='w-1/2 flex flex-col'>
-            {conference.techs.map((tech) => (
-              <span key={tech}>{tech}</span>
-            ))}
-          </div>
-        </div>
-        <p>{conference.description}</p>
-        <div className='flex items-center justify-between'>
-          <a className='flex items-center gap-2' rel="noopener noreferrer" href={conference.live} target='_blank'>
-            <HiOutlineArrowUpRight className="text-accent stroke-2"/>
-            <span>visit site</span>
-          </a>
-          <a className='flex items-center gap-2' rel="noopener noreferrer" href={conference.source} target='_blank'>
-            <HiOutlineArrowUpRight className="text-accent stroke-2"/>
-            <span>see code</span>
-          </a>
-        </div>
-      </div>
+      <TextDetails name={name} description={description} techs={techs} live={live} source={source}/>
       <div>
         <h3 className='text-center font-medium mb-2'>HOMEPAGE</h3>
         <div className='relative'>
