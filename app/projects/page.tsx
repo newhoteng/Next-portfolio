@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import Link from 'next/link';
+import { lobster } from '@/app/ui/fonts';
 
 
 import Image from 'next/image';
@@ -25,21 +25,14 @@ const Projects = () => {
 
   return (
     <section className='h-[calc(100vh-8rem)]'>
-      <div className='flex items-center justify-center h-[30%] w-full'>
-        <div className='shadow-lg aspect-video h-4/5'></div>
-      </div>
-      <div className='relative py-8 h-[70%]'>
-        <div className='absolute top-0 w-full flex items-center justify-center'>
-          <FiChevronUp className='text-3xl'/>
+      <div className='h-full border border-red-600'>
+        <div className='flex items-center justify-center text-white w-full bg-[#fc5193] aspect-[4/3] rounded-3xl border-2 border-green-600 h-3/5'>
+          <p style={lobster.style} className="text-4xl tracking-widest">METRICS</p>
         </div>
-        <div className='absolute bottom-0 w-full flex items-center justify-center'>
-          <FiChevronDown className='text-3xl'/>
-        </div>
-        <div className='h-full overflow-y-scroll no-scrollbar'>
-          {/* map and display a list of selected projects */}
-          <Link href='/projects/metrics' className='py-4 px-4 flex items-center justify-between'>
-            <div className='text-2xl font-semibold'>Metrics</div>
-            <div className='italic'>Frontend</div>
+        <div className='flex items-center justify-center h-2/5 border-2 border-blue-600'>
+          <Link href='/projects/metrics' className='block'>
+            <h2 className='border-2 text-2xl font-semibold'>Metrics</h2>
+            <p className='border-2 italic'>Web Development - Frontend</p>
           </Link>
         </div>
       </div>
