@@ -24,8 +24,21 @@ const Projects = () => {
   // }
 
   return (
-    <section className='h-[calc(100vh-8rem)]'>
-      <div className='h-full border border-red-600'>
+    <section className='h-[calc(100vh-8rem)] snap-y snap-mandatory overflow-y-scroll no-scrollbar'>
+      {/* Proj 1 */}
+      <div className='snap-always snap-start mb-[4rem] h-[calc(100vh-8rem)] border border-red-600'>
+        <div className='flex items-center justify-center text-white w-full bg-[#fc5193] aspect-[4/3] rounded-3xl border-2 border-green-600 h-3/5'>
+          <p style={lobster.style} className="text-4xl tracking-widest">METRICS</p>
+        </div>
+        <div className='flex items-center justify-center h-2/5 border-2 border-blue-600'>
+          <Link href='/projects/metrics' className='block'>
+            <h2 className='border-2 text-2xl font-semibold'>Metrics</h2>
+            <p className='border-2 italic'>Web Development - Frontend</p>
+          </Link>
+        </div>
+      </div>
+      {/* Proj 2 */}
+      <div className='snap-always snap-start h-[calc(100vh-8rem)] border border-red-600'>
         <div className='flex items-center justify-center text-white w-full bg-[#fc5193] aspect-[4/3] rounded-3xl border-2 border-green-600 h-3/5'>
           <p style={lobster.style} className="text-4xl tracking-widest">METRICS</p>
         </div>

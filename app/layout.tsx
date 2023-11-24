@@ -19,13 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth'>
-      <body className={`${poppins.className} text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
-        <header className='h-[4rem] flex items-center justify-center px-4 md:px-8'>
+      <body className={`${poppins.className} relative text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
+        <header className='fixed top-0 w-full h-[4rem] flex items-center justify-center px-4 md:px-8'>
           <div className='flex items-center justify-center gap-4 sm:gap-8'>
             <NavLinks />
           </div>
         </header>
-        <main className='min-h-[calc(100vh-8rem)] border-2 border-blue-500 px-4 md:px-8'>{children}</main>
+        <main className='min-h-[calc(100vh-8rem)] mt-[4rem] border-2 border-blue-500 px-4 md:px-8'>{children}</main>
         <footer className='h-[4rem] flex items-center justify-between px-4 md:px-8'>
           <Footer />
         </footer>
