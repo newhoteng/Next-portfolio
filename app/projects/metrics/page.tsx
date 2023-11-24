@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { lobster } from '@/app/ui/fonts';
 
 const metrics = {
   name: 'metrics',
@@ -22,12 +23,12 @@ const Metrics = () => {
   return (
     <section className='border-2 flex flex-col gap-12'>
       <div className='flex items-center justify-center text-white w-full bg-[#fc5193] aspect-[4/3] rounded-3xl border-2 border-green-600'>
-        <h1>METRICS</h1>
+        <h1 style={lobster.style} className='text-4xl tracking-widest'>METRICS</h1>
       </div>
-      <div className='border-2 border-green-600'>
+      <div className='flex flex-col border-2 gap-4 border-green-600'>
         <h2 className='text-2xl font-semibold'>METRICS</h2>
         <div className='border-2 flex gap-16'>
-          <div>BUILT WITH</div>
+          <div className='font-medium'>BUILT WITH</div>
           <div className='border-2 border-red-500 flex flex-col'>
             {metrics.techs.map((tech) => (
               <span className=''>{tech}</span>
@@ -45,22 +46,22 @@ const Metrics = () => {
         </div>
       </div>
       <div className='border-2 border-green-600'>
-        <h3 className='text-center'>HOMEPAGE</h3>
-        <div className='relative w-1/'>
+        <h3 className='text-center font-medium mb-2'>HOMEPAGE</h3>
+        <div className='relative'>
           <Image
             src={metrics.desktop['HOME PAGE']}
             // fill
             width={0}
             height={0}
             sizes='100vw'
-            className="w-full auto object-contain"
+            className="w-full auto object-contain shadow-2xl"
             alt=""
             priority
           />
         </div>
       </div>
       <div className='border-2 border-green-600'>
-        <h3 className='text-center'>POLLUTANTS PAGE</h3>
+        <h3 className='text-center font-medium mb-2'>POLLUTANTS PAGE</h3>
         <div className='relative w-1/'>
           <Image
             src={metrics.desktop['POLLUTANTS PAGE']}
@@ -68,14 +69,14 @@ const Metrics = () => {
             width={0}
             height={0}
             sizes='100vw'
-            className="w-full auto object-contain"
+            className="w-full auto object-contain shadow-2xl"
             alt=""
             priority
           />
         </div>
       </div>
       <div className='border-2 border-green-600'>
-        <h3 className='text-center font-bold'>MOBILE VERSION</h3>
+        <h3 className='text-center font-medium mb-2'>MOBILE VERSIONS</h3>
         <div className='border-2 border-red-500 flex items-cente justify-around'>
           <div className='relative w-1/3'>
             <Image
@@ -84,7 +85,7 @@ const Metrics = () => {
               width={0}
               height={0}
               sizes='100vw'
-              className="w-full auto object-contain"
+              className="w-full auto object-contain shadow-2xl"
               alt=""
               priority
             />
@@ -96,7 +97,7 @@ const Metrics = () => {
               width={0}
               height={0}
               sizes='100vw'
-              className="w-full auto object-contain"
+              className="w-full auto object-contain shadow-2xl"
               alt=""
               priority
             />

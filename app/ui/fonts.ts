@@ -1,6 +1,6 @@
 // import { Roboto } from 'next/font/google';
 // import { Oswald } from 'next/font/google';
-import { Poppins } from 'next/font/google';
+import { Poppins, Lobster } from 'next/font/google';
 // import { Lato } from 'next/font/google';
 
 // export const inter = Inter({ subsets: ['latin'] });
@@ -14,7 +14,14 @@ import { Poppins } from 'next/font/google';
 export const poppins = Poppins({ 
   weight: ['100','200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'] ,
-  display: 'swap',
+  // display: 'swap',
+  adjustFontFallback: false
+});
+
+export const lobster = Lobster({ 
+  weight: ['400'],
+  subsets: ['latin'] ,
+  // display: 'swap',
   adjustFontFallback: false
 });
 
