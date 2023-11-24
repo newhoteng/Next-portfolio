@@ -25,7 +25,7 @@ export default function RootLayout({
             <NavLinks />
           </div>
         </header>
-        <main className='min-h-[calc(100vh-8rem)] mt-[4rem] border-2 border-blue-500 px-4 md:px-8'>{children}</main>
+        <main className='min-h-[calc(100vh-8rem)] mt-[4rem] px-4 md:px-8'>{children}</main>
         <footer className='h-[4rem] flex items-center justify-between px-4 md:px-8'>
           <Footer />
         </footer>
