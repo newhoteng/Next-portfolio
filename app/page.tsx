@@ -1,8 +1,9 @@
 import { HomePageLink } from './ui/home/links';
-import { ArrowLink } from '@/public/icons';
+import { HiOutlineArrowRight } from "react-icons/hi2";
+
 
 const links = [
-  { text: 'view my projects', href: '/projects', icon: <ArrowLink /> },
+  { text: 'view my projects', href: '/projects', icon: <HiOutlineArrowRight className="stroke-2"/> },
 ];
 // { text: 'more about me', href: '/about', icon: <ArrowLink/> },
 
