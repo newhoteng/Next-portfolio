@@ -1,6 +1,9 @@
+'use client'
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
+// import Image from 'next/image'
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 
 // Map of links to display in the header.
 const links = [
@@ -37,10 +40,11 @@ const NavLink = ({ name, href, imageSource }: {
   href: string;
   imageSource: string;
 }) => {
+  const pathname = usePathname();
   return (
     <Link
       href={href}
-      className="flex items-center justify-center gap-1"
+      className="flex items-center justify-center gap-1" 
     >
       {/* <Image
         src={imageSource}
@@ -50,7 +54,16 @@ const NavLink = ({ name, href, imageSource }: {
         height={25}
         priority
       /> */}
-      <p className='font-medium text-secondary md:text-xl'>{name}</p>
+      <p 
+        className={clsx(
+          "font-medium text-secondary md:text-xl relative",
+          {
+            'after:content-[""] after:h-1 after:w-full after:bg-accent after:absolute after:left-0 after:-bottom-1': pathname === href,
+          },
+        )}
+      >
+        {name}
+      </p>
     </Link>
   )
 }

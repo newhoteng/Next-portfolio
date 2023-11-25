@@ -16,6 +16,12 @@ const config: Config = {
       },
       boxShadow: {
         'around': '0 2px 8px rgba(0, 0, 0, 0.15)',
+      },
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(255,255, 255, 0.35)",
+          "0 0px 65px rgba(255, 255,255, 0.2)"
+        ]
       }
     },
   },
