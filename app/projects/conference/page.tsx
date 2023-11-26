@@ -8,12 +8,12 @@ const conference = {
   color: '#ec5242',
   description: 'A web page for a fictional Engineer’s Conference that provides relevant information to attendees and would-be attendees alike. It features a home and about page.',
   mobile: {
-    'HOME PAGE': '/conference/Home-mobile-collapse.png',
-    'ABOUT PAGE': '/conference/About-mobile.png',
+    'HOME PAGE': '/conference/home-mobile-collapse.png',
+    'ABOUT PAGE': '/conference/about-mobile.png',
   },
   desktop: {
-    'HOME PAGE': '/conference/Home-desktop.png',
-    'ABOUT PAGE': '/conference/About-desktop.png',
+    'HOME PAGE': '/conference/home-desktop.png',
+    'ABOUT PAGE': '/conference/about-desktop.png',
   },
   techs: ['JavaScript', 'HTML', 'CSS'],
   live: 'https://newhoteng.github.io/Capstone-1/',
