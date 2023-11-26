@@ -8,7 +8,7 @@ const conference = {
   color: '#ec5242',
   description: 'A web page for a fictional Engineer’s Conference that provides relevant information to attendees and would-be attendees alike. It features a home and about page.',
   mobile: {
-    'HOME PAGE': '/conference/home-mobile-collapse.png',
+    'HOME PAGE': '/conference/home-mobile.png',
     'ABOUT PAGE': '/conference/about-mobile.png',
   },
   desktop: {
