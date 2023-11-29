@@ -44,7 +44,7 @@ const NavLink = ({ name, href, imageSource }: {
   return (
     <Link
       href={href}
-      className="flex items-center justify-center gap-1" 
+      className=" flex items-center justify-center gap-1" 
     >
       {/* <Image
         src={imageSource}
@@ -67,7 +67,5 @@ const NavLink = ({ name, href, imageSource }: {
     </Link>
   )
 }
-
-// hidden sm:block md:text-lg font-black
 
 export default NavLinks

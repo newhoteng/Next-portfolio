@@ -17,11 +17,14 @@ const config: Config = {
       boxShadow: {
         'around': '0 2px 8px rgba(0, 0, 0, 0.15)',
       },
-      dropShadow: {
-        glow: [
-          "0 0px 20px rgba(255,255, 255, 0.35)",
-          "0 0px 65px rgba(255, 255,255, 0.2)"
-        ]
+      keyframes: {
+        slideleft: {
+          '0%': { opacity: '0', marginRight: '-1rem' },
+          '100%': { opacity: '1', marginRight: 'auto'}
+        }
+      },
+      animation: {
+        slideleft: 'slideleft 1s ease-in-out forwards',
       }
     },
   },
