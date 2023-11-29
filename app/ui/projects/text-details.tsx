@@ -7,7 +7,7 @@ const TextDetails = ({ name, techs, description, live, source } :
 }) => {
   return (
     <div className='flex flex-col gap-4'>
-      <h2 className='text-2xl font-semibold uppercase'>{name}</h2>
+      {/* <h2 className='text-2xl font-semibold uppercase'>{name}</h2> */}
       <div className='flex'>
         <div className='w-1/2 font-medium'>BUILT WITH</div>
         <div className='w-1/2 flex flex-col'>
