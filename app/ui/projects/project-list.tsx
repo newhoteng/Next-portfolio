@@ -10,8 +10,8 @@ const ProjectList = ({ title, color, type, href } :
       <div className='shadow-around flex items-center bg-white p-4 rounded-md gap-4'>
         <div style={{backgroundColor: color}} className='w-10 h-10 rounded'></div>
         <div className='grow flex items-center justify-between'>
-          <h3 className='font-bold'>{title}</h3>
-          <p className='font-thin text-sm'>{type}</p>
+          <h3 className='font-semibold'>{title}</h3>
+          <p className='font-light text-sm'>{type}</p>
         </div>
       </div>
     </Link>
