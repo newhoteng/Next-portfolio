@@ -9,13 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // primary: '#fff9f3',
         primary: '	hsl(30, 100%, 98%)',
-        // secondary: '#0e1f39',
         secondary: '	hsl(216, 61%, 14%)',
-        // paragraph: '#313234',
         paragraph: '	hsl(220, 3%, 20%)',
-        // accent: '#ff31ad',
         accent: '	hsl(324, 100%, 60%)'
       },
       boxShadow: {

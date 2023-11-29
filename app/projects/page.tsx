@@ -4,25 +4,25 @@ import Project from '../ui/projects/project';
 const projectData = [
   {
     title: 'Metrics',
-    color: '#fc5193',
+    color: 'hsl(337, 97%, 65%)',
     type: 'Web Development - Frontend',
     href: '/projects/metrics',
   },
   {
     title: 'Conference',
-    color: '#ec5242',
+    color: 'hsl(6, 82%, 59%)',
     type: 'Web Development - Frontend',
     href: '/projects/conference',
   },
   {
     title: 'ToDo',
-    color: '#545862',
+    color: 'hsl(223, 8%, 36%)',
     type: 'Web Development - Frontend',
     href: '/projects/todo',
   },
   {
     title: 'Bookstore',
-    color: '#0290ff',
+    color: 'hsl(206, 100%, 50%)',
     type: 'Web Development - Frontend',
     href: '/projects/bookstore',
   }

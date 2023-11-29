@@ -5,7 +5,7 @@ import TextDetails from '@/app/ui/projects/text-details';
 
 const metrics = {
   name: 'Metrics',
-  color: '#fc5193',
+  color: 'hsl(337, 97%, 65%)',
   description: 'A web app that fetches and displays air quality data for selected cities from a third party RESTful API. A click on a city tile on the homepage directs users to the details page which lists the concentration of the various pollutants. It has a colour indicator feature that shows an air icon in a different colour depending on the current air quality index.',
   mobile: {
     'HOME PAGE': '/metrics/mobile-home.png',

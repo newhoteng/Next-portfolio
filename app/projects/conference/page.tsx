@@ -5,7 +5,7 @@ import TextDetails from '@/app/ui/projects/text-details';
 
 const conference = {
   name: 'Conference',
-  color: '#ec5242',
+  color: 'hsl(6, 82%, 59%)',
   description: 'A web page for a fictional Engineer’s Conference that provides relevant information to attendees and would-be attendees alike. It features a home and about page.',
   mobile: {
     'HOME PAGE': '/conference/home-mobile.png',

@@ -5,7 +5,7 @@ import TextDetails from '@/app/ui/projects/text-details';
 
 const bookstore = {
   name: 'Bookstore',
-  color: '#0290ff',
+  color: 'hsl(206, 100%, 50%)',
   description: 'A web application where users can add and remove books they are reading. The homepage displays a list of all added books. Data is stored and fetched from 3rd party API endpoints.',
   // mobile: {
   //   'PAGE': '/todo/mobile.png',
