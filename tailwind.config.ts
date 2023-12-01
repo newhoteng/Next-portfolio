@@ -19,12 +19,13 @@ const config: Config = {
       },
       keyframes: {
         slideleft: {
-          '0%': { opacity: '0', marginRight: '-1rem' },
-          '100%': { opacity: '1', marginRight: 'auto'}
+          '0%': { opacity: '0', right: '-2rem' },
+          '20%': { opacity: '0', right: '-2rem' },
+          '100%': { opacity: '1', right: '0'},
         }
       },
       animation: {
-        slideleft: 'slideleft 1s ease-in-out forwards',
+        slideleft: 'slideleft 1.5s ease-in-out forwards',
       }
     },
   },
