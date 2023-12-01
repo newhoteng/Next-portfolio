@@ -19,18 +19,22 @@ const config: Config = {
       },
       keyframes: {
         slideleft: {
-          '0%': { opacity: '0', right: '-2rem' },
-          '20%': { opacity: '0', right: '-2rem' },
-          '100%': { opacity: '1', right: '0'},
+          '0%': { 'opacity': '0', 'right': '-2rem' },
+          '100%': { 'opacity': '1', 'right': '0'},
+        },
+        slideup: {
+          '0%': { 'top': '120%' },
+          '100%': { 'top': '0%' },
         }
       },
       animation: {
-        slideleft: 'slideleft 1.5s ease-in-out forwards',
+        slideleft: 'slideleft 0.8s ease-in-out forwards',
+        slideup: 'slideup 1.5s ease-in-out forwards'
       }
     },
   },
   plugins: [
-    
+    require("tailwindcss-animation-delay"),
   ],
 }
 export default config
