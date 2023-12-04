@@ -23,13 +23,13 @@ const config: Config = {
           '100%': { 'opacity': '1', 'right': '0'},
         },
         slideup: {
-          '0%': { 'top': '120%' },
-          '100%': { 'top': '0%' },
+          '0%': { 'margin-top': '120vh' },
+          '100%': { 'margin-top': '0' },
         }
       },
       animation: {
         slideleft: 'slideleft 0.8s ease-in-out forwards',
-        slideup: 'slideup 1.5s ease-in-out forwards'
+        slideup: 'slideup 1s ease-in-out forwards'
       }
     },
   },
