@@ -13,7 +13,7 @@ const todo = {
   desktop: {
     'PAGE': '/todo/desktop.png',
   },
-  techs: ['JavaScript', 'HTML', 'CSS'],
+  techs: ['JavaScript', 'HTML', 'CSS', 'Local Storage'],
   live: 'https://newhoteng.github.io/To-do-list/',
   source: 'https://github.com/newhoteng/To-do-list',
 }

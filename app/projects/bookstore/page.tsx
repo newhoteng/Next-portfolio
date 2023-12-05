@@ -13,7 +13,7 @@ const bookstore = {
   desktop: {
     'PAGE': '/bookstore/bookstore-fullwidth.png',
   },
-  techs: ['React', 'JavaScript', 'Redux'],
+  techs: ['React', 'Redux', 'JavaScript', '3rd Party RESTful API', 'CSS Modules'],
   live: 'https://newhoteng.github.io/Bookstore/',
   source: 'https://github.com/newhoteng/Bookstore',
 }

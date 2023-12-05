@@ -15,7 +15,7 @@ const metrics = {
     'HOME PAGE': '/metrics/desktop-home.png',
     'POLLUTANTS PAGE': '/metrics/desktop-pollutants.png',
   },
-  techs: ['React', 'Redux', 'JavaScript'],
+  techs: ['React', 'Redux', 'JavaScript', '3rd Party RESTful API', 'CSS Modules'],
   live: 'https://metrics-59av.onrender.com/',
   source: 'https://github.com/newhoteng/Metrics',
 }
