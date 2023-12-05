@@ -4,6 +4,12 @@ import ProjectList from '../ui/projects/project-list';
 
 const projectData = [
   {
+    title: 'Il Dashboard',
+    color: 'hsl(234, 49%, 30%)',
+    type: 'Frontend',
+    href: '/projects/il',
+  },
+  {
     title: 'Metrics',
     color: 'hsl(337, 97%, 65%)',
     type: 'Frontend',
