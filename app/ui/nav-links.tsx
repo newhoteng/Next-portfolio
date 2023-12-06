@@ -44,7 +44,7 @@ const NavLink = ({ name, href, imageSource }: {
   return (
     <Link
       href={href}
-      className="animate-slideleft animation-delay-500 right-[-2rem] opacity-0 relative flex items-center justify-center gap-1" 
+      className="flex items-center justify-center gap-1" 
     >
       {/* <Image
         src={imageSource}
