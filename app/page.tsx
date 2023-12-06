@@ -3,7 +3,7 @@ import { HiOutlineArrowRight } from "react-icons/hi2";
 
 
 const links = [
-  { text: 'view my projects', href: '/projects', icon: <HiOutlineArrowRight className="stroke-2"/> },
+  { text: 'view my projects', href: '/projects', icon: <HiOutlineArrowRight className=" w-6 h-6 stroke-2"/> },
 ];
 // { text: 'more about me', href: '/about', icon: <ArrowLink/> },
 

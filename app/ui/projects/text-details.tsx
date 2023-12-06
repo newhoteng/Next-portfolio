@@ -19,11 +19,11 @@ const TextDetails = ({ name, techs, description, live, source } :
       <p>{description}</p>
       <div className='flex items-center justify-between'>
         <a className='flex items-center gap-2' rel="noopener noreferrer" href={live} target='_blank'>
-          <HiOutlineArrowUpRight className="text-accent stroke-2"/>
+          <HiOutlineArrowUpRight className="w-5 h-5 text-accent stroke-2"/>
           <span>visit site</span>
         </a>
         <a className='flex items-center gap-2' rel="noopener noreferrer" href={source} target='_blank'>
-          <HiOutlineArrowUpRight className="text-accent stroke-2"/>
+          <HiOutlineArrowUpRight className="w-5 h-5 text-accent stroke-2"/>
           <span>see code</span>
         </a>
       </div>

@@ -11,7 +11,7 @@ const ProjectList = ({ title, color, type, href } :
         <div style={{backgroundColor: color}} className='w-10 h-10 rounded'></div>
         <div className='grow flex items-center justify-between'>
           <h3 className='font-semibold'>{title}</h3>
-          <p className='font-light text-sm'>{type}</p>
+          {/* <p className='font-light text-sm'>{type}</p> */}
         </div>
       </div>
     </Link>
