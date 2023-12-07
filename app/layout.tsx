@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { poppins } from '@/app/ui/fonts';
 import './globals.css';
 import NavLinks from './ui/nav-links';
+import Link from 'next/link';
 import Footer from './ui/footer';
 import { PersonalLogo } from '@/public/icons';
 
@@ -23,9 +24,11 @@ export default function RootLayout({
       <body className={`${poppins.className} relative text-paragraph bg-[#fff9f3] max-w-screen-2xl my-0 mx-auto`}>
         <header className="z-10 bg-[#fff9f3] fixed top-0 left-0 w-full h-[4rem] flex items-center justify-between">
           <nav className="flex items-center justify-between max-w-screen-2xl w-full mx-auto px-4 md:px-12">
-            <div className=" border border-accent rounded-lg w-12 md:w-14 text-secondary flex items-center justify-center">
-              <PersonalLogo />
-            </div>
+            <Link href="/">
+              <div className=" border border-accent rounded-lg w-12 md:w-14 text-secondary flex items-center justify-center">
+                <PersonalLogo />
+              </div>
+            </Link>
             <div className='flex items-center justify-center gap-4 sm:gap-8'>
               <NavLinks />
             </div>
