@@ -6,6 +6,7 @@ import NavLinks from './ui/nav-links';
 import Link from 'next/link';
 import Footer from './ui/footer';
 import { PersonalLogo } from '@/public/icons';
+import ColorThemeToggle from './ui/color-theme-toggle';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,9 @@ export default function RootLayout({
             </Link>
             <div className='flex items-center justify-center gap-4 sm:gap-8'>
               <NavLinks />
+            </div>
+            <div>
+              <ColorThemeToggle />
             </div>
           </nav>
         </header>
