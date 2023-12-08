@@ -1,12 +1,21 @@
 'use client';
 
-import React, { useState } from 'react';
-import { IoMdSunny } from "react-icons/io";
+import { useEffect, useState } from 'react';
 import { MdWbSunny } from "react-icons/md";
 import { RiMoonFill } from "react-icons/ri";
 
 const ColorThemeToggle = () => {
+  // Set initial mode to light
   const [ isLightMode, setIsLightMode ] = useState<boolean>(true);
+
+  // Add 'dark' class to html tag when in dark mode and remove otherwise
+  useEffect(() => {
+    if (!isLightMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [isLightMode])
 
   return (
     <div 
