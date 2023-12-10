@@ -34,7 +34,7 @@ const Conference = () => {
             width={0}
             height={0}
             sizes='100vw'
-            className="w-full auto object-contain shadow-around"
+            className="w-full auto object-contain shadow-around dark:shadow-dark"
             alt=""
             priority
           />
@@ -49,7 +49,7 @@ const Conference = () => {
             width={0}
             height={0}
             sizes='100vw'
-            className="w-full auto object-contain shadow-around"
+            className="w-full auto object-contain shadow-around dark:shadow-dark"
             alt=""
             priority
           />
@@ -64,7 +64,7 @@ const Conference = () => {
               width={0}
               height={0}
               sizes='100vw'
-              className="w-full auto object-contain shadow-around"
+              className="w-full auto object-contain shadow-around dark:shadow-dark"
               alt=""
               priority
             />
@@ -75,7 +75,7 @@ const Conference = () => {
               width={0}
               height={0}
               sizes='100vw'
-              className="w-full auto object-contain shadow-around"
+              className="w-full auto object-contain shadow-around dark:shadow-dark"
               alt=""
               priority
             />

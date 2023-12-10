@@ -6,14 +6,22 @@ import { RiMoonFill } from "react-icons/ri";
 
 const ColorThemeToggle = () => {
   // Set initial mode to light
-  const [ isLightMode, setIsLightMode ] = useState<boolean>(true);
+  const [ isLightMode, setIsLightMode ] = useState<boolean>();
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'light') setIsLightMode(true);
+    else { setIsLightMode(false) };
+  }, []);
 
   // Add 'dark' class to html tag when in dark mode and remove otherwise
   useEffect(() => {
     if (!isLightMode) {
-      document.documentElement.classList.add('dark')
+      document.documentElement.classList.add('dark');
+      localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove('dark')
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem("theme", "light")
     }
   }, [isLightMode])
 
