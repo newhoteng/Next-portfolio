@@ -23,7 +23,7 @@ export default function RootLayout({
         <header className="z-10 dark:bg-secondary bg-primary fixed top-0 left-0 w-full h-[4rem] flex items-center justify-between">
           <nav className="flex items-center justify-between max-w-screen-2xl w-full mx-auto px-4 md:px-12">
             <Link href="/">
-              <div className="w-12 md:w-14 stroke-accent text-secondary flex items-center justify-center">
+              <div className="w-12 md:w-14 text-accent flex items-center justify-center">
                 <PersonalLogo />
               </div>
             </Link>
