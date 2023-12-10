@@ -9,9 +9,10 @@ const ColorThemeToggle = () => {
   const [ isLightMode, setIsLightMode ] = useState<boolean>();
 
   useEffect(() => {
+    // localStorage.clear();
     const theme = localStorage.getItem('theme');
     if (theme === 'light') setIsLightMode(true);
-    else { setIsLightMode(false) };
+    // else { setIsLightMode(false) };
   }, []);
 
   // Add 'dark' class to html tag when in dark mode and remove otherwise
