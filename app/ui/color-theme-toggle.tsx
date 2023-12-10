@@ -20,7 +20,7 @@ const ColorThemeToggle = () => {
   return (
     <div 
       onClick={() => setIsLightMode(!isLightMode)}
-      className='flex items-center justify-center rounded-full border border-red-600 w-8 h-8'
+      className='bg-gray-100 dark:bg-gray-700 flex items-center justify-center rounded-full borde borde-red-600 w-8 h-8'
     >
       {isLightMode ? (
         <RiMoonFill />

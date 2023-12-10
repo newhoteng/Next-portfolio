@@ -56,7 +56,7 @@ const NavLink = ({ name, href, imageSource }: {
       /> */}
       <p 
         className={clsx(
-          "font-medium text-secondary md:text-xl relative",
+          "font-medium text-secondary dark:text-lightblue md:text-xl relative",
           {
             'after:content-[""] after:h-1 after:w-full after:bg-accent after:absolute after:left-0 after:-bottom-1': pathname === href,
           },

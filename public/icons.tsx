@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const PersonalLogo = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 28 24" strokeWidth="0.1">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="transparent" viewBox="0 0 28 24" strokeWidth="0.5">
     <path fillRule="evenodd" d="M 4 6 v12 a 2 2 0 0 0 4 0 v-2 a 2 2 0 0 1 4 0 a 4 4 0 0 0 4 4 h4 a 4 4 0 0 0 4 -4 v-8 a 4 4 0 0 0 -4 -4 h-4 a 4 4 0 0 0 -4 4 a 2 2 0 1 1 -4 0 v-2 a 2 2 0 1 0 -4 0 M 20 10 a 2 2 0 0 0 -4 0 v4 a 2 2 0 0 0 4 0 z" />
   </svg>
 );

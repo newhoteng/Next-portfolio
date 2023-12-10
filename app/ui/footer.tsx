@@ -13,7 +13,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <>
-      <div>&copy; 2023</div>
+      {/* <div>&copy; 2023</div> */}
       <div className='flex items-center justify-center gap-2'>
         {socialLinks.map((social) => (
           <Social key={social.href} href={social.href} icon={social.icon} />
@@ -25,7 +25,7 @@ const Footer = () => {
 
 export const Social = ({ href, icon } : { href: string; icon: JSX.Element}) => {
   return (
-    <Link href={href} target="_blank" className='border border-accent rounded w-8 h-8 flex items-center justify-center'>
+    <Link href={href} target="_blank" className='border dark:border-gray-700 dark:hover:border-accent hover:border-accent rounded w-8 h-8 flex items-center justify-center text-secondary dark:text-lightblue'>
       {icon}
     </Link>
   )

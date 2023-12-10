@@ -16,7 +16,7 @@ const il = {
     'PRODUCT PAGE': '/il/product-desktop.png',
     'EDIT PAGE': '/il/edit-desktop.png',
   },
-  techs: ['React', 'Redux', 'JavaScript', '3rd Party RESTful API', 'Tailwind CSS'],
+  techs: ['React', 'Redux', 'JavaScript', 'RESTful API', 'Tailwind CSS'],
   live: 'https://innoloft-tmn0.onrender.com/product',
   source: 'https://github.com/newhoteng/il',
 }
@@ -35,7 +35,7 @@ const Il = () => {
             width={0}
             height={0}
             sizes='100vw'
-            className="w-full auto object-contain shadow-around"
+            className="w-full auto object-contain shadow-around dark:shadow-dark"
             alt=""
             priority
           />

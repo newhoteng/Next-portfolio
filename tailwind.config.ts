@@ -10,13 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '	hsl(30, 100%, 98%)',
+        // primary: '	hsl(30, 100%, 98%)',
+        primary: '#fffefb',
         secondary: '	hsl(216, 61%, 14%)',
         paragraph: '	hsl(220, 3%, 20%)',
-        accent: '	hsl(324, 100%, 60%)'
+        accent: '	hsl(324, 100%, 60%)',
+        lightblue: '#c3d4ee'
+        // accent: '#9615db',
+        // accent: '#f48200',
       },
       boxShadow: {
         'around': '0 2px 8px rgba(0, 0, 0, 0.15)',
+        'dark': '0 2px 16px rgba(255, 255, 255, 0.15)',
       },
       keyframes: {
         slideleft: {
