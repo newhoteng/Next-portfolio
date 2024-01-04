@@ -30,9 +30,9 @@ export default function RootLayout({
             <div className='flex items-center justify-center gap-4 sm:gap-8'>
               <NavLinks />
             </div>
-            <div>
+            {/* <div>
               <ColorThemeToggle />
-            </div>
+            </div> */}
           </nav>
         </header>
         <main className="min-h-[calc(100vh-8rem)] mt-[4rem] px-4 md:px-12">{children}</main>

@@ -4,6 +4,12 @@ import ProjectList from '../ui/projects/project-list';
 
 const projectData = [
   {
+    title: 'MeChat',
+    color: 'hsl(264, 100%, 61%)',
+    type: 'Frontend',
+    href: '/projects/mechat',
+  },
+  {
     title: 'Il Dashboard',
     color: 'hsl(234, 49%, 30%)',
     type: 'Frontend',
